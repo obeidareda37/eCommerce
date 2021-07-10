@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.ShowAllActivity">
+    tools:context=".ui.activity.ShowAllActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/show_all_toolbar"
@@ -15,7 +15,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:title="All Items"
         android:minHeight="?attr/actionBarSize"
-        android:background="#8ff7fd"
+        android:background="@color/blue"
+        app:titleTextColor="@color/white"
         android:theme="?attr/actionBarTheme"
         />
 

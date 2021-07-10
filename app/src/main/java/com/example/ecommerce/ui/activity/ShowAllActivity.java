@@ -1,4 +1,4 @@
-package com.example.ecommerce.ui;
+package com.example.ecommerce.ui.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -69,9 +69,9 @@ public class ShowAllActivity extends AppCompatActivity {
                     });
         }
 
-        if (type != null && type.equalsIgnoreCase("men")){
+        if (type != null && type.equalsIgnoreCase("lcd")){
 
-            firebaseFirestore.collection("ShowAll").whereEqualTo("type","men")
+            firebaseFirestore.collection("ShowAll").whereEqualTo("type","lcd")
                     .get()
                     .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                         @Override
@@ -87,9 +87,9 @@ public class ShowAllActivity extends AppCompatActivity {
                     });
         }
 
-        if (type != null && type.equalsIgnoreCase("kids")){
+        if (type != null && type.equalsIgnoreCase("labtop")){
 
-            firebaseFirestore.collection("ShowAll").whereEqualTo("type","kids")
+            firebaseFirestore.collection("ShowAll").whereEqualTo("type","labtop")
                     .get()
                     .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                         @Override
@@ -105,9 +105,9 @@ public class ShowAllActivity extends AppCompatActivity {
                     });
         }
 
-        if (type != null && type.equalsIgnoreCase("woman")){
+        if (type != null && type.equalsIgnoreCase("iphon")){
 
-            firebaseFirestore.collection("ShowAll").whereEqualTo("type","woman")
+            firebaseFirestore.collection("ShowAll").whereEqualTo("type","iphon")
                     .get()
                     .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                         @Override
@@ -123,9 +123,9 @@ public class ShowAllActivity extends AppCompatActivity {
                     });
         }
 
-        if (type != null && type.equalsIgnoreCase("shoes")){
+        if (type != null && type.equalsIgnoreCase("samsung")){
 
-            firebaseFirestore.collection("ShowAll").whereEqualTo("type","shoes")
+            firebaseFirestore.collection("ShowAll").whereEqualTo("type","samsung")
                     .get()
                     .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                         @Override

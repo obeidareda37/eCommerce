@@ -1,4 +1,4 @@
-package com.example.ecommerce.ui;
+package com.example.ecommerce.ui.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,7 +30,6 @@ import java.util.List;
 
 public class CartActivity extends AppCompatActivity {
 
-    int overAllTotalAmount;
     TextView overAllAmount;
     Toolbar toolbar;
     RecyclerView recyclerView;

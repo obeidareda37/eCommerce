@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="@dimen/_5sdp"
-    android:elevation="@dimen/_5sdp"
     android:layout_margin="@dimen/_5sdp"
-    >
+    android:elevation="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_5sdp">
 
     <LinearLayout
-        android:padding="@dimen/_7sdp"
-        android:background="#FB9FDE"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:background="@drawable/shape_solid"
+        android:orientation="vertical"
+        android:padding="@dimen/_7sdp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -27,19 +26,28 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/amethysta"
                 android:text="Current Date: "
+                android:textColor="@color/white"
                 android:textSize="@dimen/_16ssp"
-                android:textStyle="bold"
-                />
-             <TextView
-                 android:id="@+id/current_date"
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:layout_weight="1"
-                 android:fontFamily="@font/amethysta"
-                 android:text="Current Date: "
-                 android:textSize="@dimen/_16ssp"
-                 android:textStyle="bold"/>
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/current_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/amethysta"
+                android:text="Current Date: "
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold" />
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/white" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -53,9 +61,10 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/amethysta"
                 android:text="Current Time: "
+                android:textColor="@color/white"
                 android:textSize="@dimen/_16ssp"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/current_Time"
                 android:layout_width="wrap_content"
@@ -63,10 +72,16 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/amethysta"
                 android:text="Current Time: "
+                android:textColor="@color/white"
                 android:textSize="@dimen/_16ssp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
         </LinearLayout>
-
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/white" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -80,9 +95,10 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/amethysta"
                 android:text="Product Name: "
+                android:textColor="@color/white"
                 android:textSize="@dimen/_16ssp"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/product_Name"
                 android:layout_width="wrap_content"
@@ -90,11 +106,16 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/amethysta"
                 android:text="Product Name: "
+                android:textColor="@color/white"
                 android:textSize="@dimen/_16ssp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
         </LinearLayout>
-
-
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/white" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -108,9 +129,10 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/amethysta"
                 android:text="Product Price: "
+                android:textColor="@color/white"
                 android:textSize="@dimen/_16ssp"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/product_Price"
                 android:layout_width="wrap_content"
@@ -118,11 +140,17 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/amethysta"
                 android:text="Product Price: "
+                android:textColor="@color/white"
                 android:textSize="@dimen/_16ssp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
         </LinearLayout>
 
-
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/white" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -135,9 +163,10 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/amethysta"
                 android:text="Total Price: "
+                android:textColor="@color/white"
                 android:textSize="@dimen/_16ssp"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/total_price"
                 android:layout_width="wrap_content"
@@ -145,11 +174,17 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/amethysta"
                 android:text="Total Price: "
+                android:textColor="@color/white"
                 android:textSize="@dimen/_16ssp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
         </LinearLayout>
 
-
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/white" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -162,9 +197,10 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/amethysta"
                 android:text="Total Quantity: "
+                android:textColor="@color/white"
                 android:textSize="@dimen/_16ssp"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/total_quantity"
                 android:layout_width="wrap_content"
@@ -172,8 +208,9 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/amethysta"
                 android:text="Total Quantity: "
+                android:textColor="@color/white"
                 android:textSize="@dimen/_16ssp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
         </LinearLayout>
 
     </LinearLayout>

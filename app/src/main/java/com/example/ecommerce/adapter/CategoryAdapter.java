@@ -2,7 +2,6 @@ package com.example.ecommerce.adapter;
 
 import android.content.Context;
 import android.content.Intent;
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,8 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.ecommerce.R;
 import com.example.ecommerce.models.Category;
-import com.example.ecommerce.ui.DetailedActivity;
-import com.example.ecommerce.ui.ShowAllActivity;
+import com.example.ecommerce.ui.activity.ShowAllActivity;
 
 import java.util.List;
 

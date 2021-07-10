@@ -1,4 +1,4 @@
-package com.example.ecommerce.ui;
+package com.example.ecommerce.ui.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,6 +8,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -33,7 +35,7 @@ public class AddressActivity extends AppCompatActivity implements AddressAdapter
     private AddressAdapter addressAdapter;
     private FirebaseAuth auth;
     private FirebaseFirestore firebaseFirestore;
-    Button addAddress, paymentBtn;
+    Button paymentBtn;
     Toolbar toolbar;
     String mAddress = "";
 
@@ -57,7 +59,6 @@ public class AddressActivity extends AppCompatActivity implements AddressAdapter
         auth = FirebaseAuth.getInstance();
 
         recyclerView = findViewById(R.id.address_recycler);
-        addAddress = findViewById(R.id.add_address_btn);
         paymentBtn = findViewById(R.id.payment_btn);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
@@ -79,12 +80,6 @@ public class AddressActivity extends AppCompatActivity implements AddressAdapter
             }
         });
 
-        addAddress.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(AddressActivity.this, AddAddressActivity.class));
-            }
-        });
 
         paymentBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -111,6 +106,23 @@ public class AddressActivity extends AppCompatActivity implements AddressAdapter
 
             }
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.add_address_menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.menu_new_address){
+            startActivity(new Intent(AddressActivity.this, AddAddressActivity.class));
+        }
+
+        return true;
     }
 
     @Override

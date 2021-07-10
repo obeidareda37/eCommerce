@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.DetailedActivity">
+    tools:context=".ui.activity.DetailedActivity">
 
 
     <ImageView
@@ -15,23 +15,24 @@
         android:src="@drawable/ic_launcher_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/detailed_toolbar" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/detailed_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:title="Product Detailed" />
+        app:title="Product Name"
+        app:titleTextColor="@color/white" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_20sdp"
-        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_margin="16dp"
         android:elevation="@dimen/_10sdp"
         android:translationY="-55dp"
         app:cardCornerRadius="@dimen/_10sdp"
@@ -98,26 +99,28 @@
 
                 />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:fontFamily="@font/amethysta"
-                android:text="Price"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_21ssp"
-                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:layout_marginTop="16dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/amethysta"
+                    android:text="Price"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_21ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="16dp"
                     android:fontFamily="@font/amethysta"
                     android:text="$"
                     android:textColor="@color/purple_700"
@@ -127,6 +130,7 @@
                     android:id="@+id/detailed_price"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:fontFamily="@font/amethysta"
                     android:text="20"
                     android:textColor="@color/purple_700"
@@ -142,8 +146,8 @@
 
                 <ImageView
                     android:id="@+id/add_item"
-                    android:layout_width="@dimen/_37sdp"
-                    android:layout_height="@dimen/_37sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/_6sdp"
                     android:src="@drawable/plusicon" />
 
@@ -154,13 +158,13 @@
                     android:layout_marginStart="@dimen/_6sdp"
                     android:layout_marginEnd="@dimen/_6sdp"
                     android:text="1"
-                    android:textSize="@dimen/_28ssp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <ImageView
                     android:id="@+id/remove_item"
-                    android:layout_width="@dimen/_37sdp"
-                    android:layout_height="@dimen/_37sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_6sdp"
                     android:layout_marginEnd="@dimen/_6sdp"
                     android:src="@drawable/iconminus" />
@@ -174,12 +178,12 @@
         android:id="@+id/add_to_cart"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/pink"
-        android:drawableTint="@color/white"
+        android:background="@color/blue"
         android:drawableLeft="@drawable/mycart"
-        android:padding="@dimen/_14sdp"
+        android:drawableTint="@color/white"
         android:text="Add To Cart"
         android:textAllCaps="false"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -192,11 +196,12 @@
         android:id="@+id/buy_now"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/mycart"
+        android:drawableLeft="@drawable/ic_baseline_payment_24"
         android:drawableTint="@color/white"
-        android:padding="@dimen/_14sdp"
+        android:padding="8dp"
         android:text="Buy Now"
         android:textAllCaps="false"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

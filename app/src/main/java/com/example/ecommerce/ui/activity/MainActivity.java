@@ -1,4 +1,4 @@
-package com.example.ecommerce.ui;
+package com.example.ecommerce.ui.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,7 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.ecommerce.R;
-import com.example.ecommerce.fragments.HomeFragment;
+import com.example.ecommerce.ui.fragment.HomeFragment;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         toolbar = findViewById(R.id.home_toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_baseline_menu_24);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_baseline_home_24);
         homeFragment = new HomeFragment();
         loadFragment(homeFragment);
 

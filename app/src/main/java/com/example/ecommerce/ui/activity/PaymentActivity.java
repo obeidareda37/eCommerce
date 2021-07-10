@@ -1,4 +1,4 @@
-package com.example.ecommerce.ui;
+package com.example.ecommerce.ui.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;

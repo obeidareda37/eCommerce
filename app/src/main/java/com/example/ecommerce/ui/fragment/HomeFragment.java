@@ -1,4 +1,4 @@
-package com.example.ecommerce.fragments;
+package com.example.ecommerce.ui.fragment;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -10,18 +10,13 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.denzcoskun.imageslider.ImageSlider;
-import com.denzcoskun.imageslider.constants.ScaleTypes;
-import com.denzcoskun.imageslider.models.SlideModel;
 import com.example.ecommerce.R;
 import com.example.ecommerce.adapter.CategoryAdapter;
 import com.example.ecommerce.adapter.NewProductsAdapter;
@@ -29,7 +24,7 @@ import com.example.ecommerce.adapter.PopularAdapter;
 import com.example.ecommerce.models.Category;
 import com.example.ecommerce.models.NewProducts;
 import com.example.ecommerce.models.PopularProducts;
-import com.example.ecommerce.ui.ShowAllActivity;
+import com.example.ecommerce.ui.activity.ShowAllActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -113,18 +108,6 @@ public class HomeFragment extends Fragment {
                 startActivity(intent);
             }
         });
-
-
-
-        //Image slider
-        ImageSlider imageSlider = view.findViewById(R.id.image_slider);
-        List<SlideModel> slideModels = new ArrayList<>();
-
-        slideModels.add(new SlideModel(R.drawable.banner1,"Discount On Shoes Items", ScaleTypes.CENTER_CROP));
-        slideModels.add(new SlideModel(R.drawable.banner2,"Discount On Perfume", ScaleTypes.CENTER_CROP));
-        slideModels.add(new SlideModel(R.drawable.banner3,"70% OFF", ScaleTypes.CENTER_CROP));
-
-        imageSlider.setImageList(slideModels);
 
         progressDialog.setTitle("Welcome To My ECommerce App");
         progressDialog.setMessage("Please waite....");

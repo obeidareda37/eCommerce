@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.ecommerce.R;
 import com.example.ecommerce.models.NewProducts;
-import com.example.ecommerce.ui.DetailedActivity;
+import com.example.ecommerce.ui.activity.DetailedActivity;
 
 import java.util.List;
 

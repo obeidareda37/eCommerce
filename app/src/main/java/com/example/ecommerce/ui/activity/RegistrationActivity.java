@@ -1,4 +1,4 @@
-package com.example.ecommerce.ui;
+package com.example.ecommerce.ui.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -54,7 +54,7 @@ public class RegistrationActivity extends AppCompatActivity {
             SharedPreferences.Editor editor = sharedPreferences.edit();
             editor.putBoolean("firstTime",false);
             editor.commit();
-            Intent intent = new Intent(RegistrationActivity.this,OnBoardingActivity.class);
+            Intent intent = new Intent(RegistrationActivity.this,MainActivity.class);
             startActivity(intent);
             finish();
         }

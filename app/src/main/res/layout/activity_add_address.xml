@@ -4,25 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.AddAddressActivity">
+    tools:context=".ui.activity.AddAddressActivity">
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="24dp"
-        android:text="Create Address"
+        android:layout_margin="24dp"
+        android:text="Add new Address"
+        android:textColor="@color/blue"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/add_address_toolbar" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout3"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="300dp"
+        android:layout_width="0dp"
         android:layout_height="64dp"
-        android:layout_marginTop="40dp"
+        android:layout_margin="24dp"
         android:hint="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.424"
@@ -40,9 +41,9 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout4"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="300dp"
+        android:layout_width="0dp"
         android:layout_height="64dp"
-        android:layout_marginTop="10dp"
+        android:layout_margin="24dp"
         android:hint="Address Lane"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.424"
@@ -59,9 +60,9 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout5"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="300dp"
+        android:layout_width="0dp"
         android:layout_height="64dp"
-        android:layout_marginTop="10dp"
+        android:layout_margin="24dp"
         android:hint="City"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.424"
@@ -79,9 +80,9 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout6"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="300dp"
+        android:layout_width="0dp"
         android:layout_height="64dp"
-        android:layout_marginTop="10dp"
+        android:layout_margin="24dp"
         android:hint="Postal Code"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.424"
@@ -97,9 +98,9 @@
 
     <com.google.android.material.textfield.TextInputLayout
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="300dp"
+        android:layout_width="0dp"
         android:layout_height="64dp"
-        android:layout_marginTop="10dp"
+        android:layout_margin="24dp"
         android:hint="Phone Number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.424"
@@ -115,10 +116,10 @@
 
     <Button
         android:id="@+id/ad_add_address"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
-
+        android:layout_margin="@dimen/_32sdp"
+        android:background="@color/blue"
         android:text="Add Address"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -130,14 +131,14 @@
         android:id="@+id/add_address_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#8FF7FD"
-        app:title="Add Address"
+        android:background="@color/blue"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Add Address"
+        app:titleTextColor="@color/white" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
